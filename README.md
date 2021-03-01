@@ -9,7 +9,7 @@ Especificações Técnicas
 -------------
 
 - **Plataforma suportada:** iOS 10.0 +
-- **Linguagem:** Swift 4.0
+- **Linguagem:** Swift 5.3
 - **Dispositivos:** iPhone e iPad
 - **Idioma de escrita do código:** Inglês
 - **Idiomas do app:** Inglês e Português (deve adaptar-se de acordo com o idioma do device do usuário)
@@ -28,15 +28,15 @@ Requisitos do Produto
 
 #### Requisitos obrigatórios
 
- - Utilização da API https://www.themoviedb.org/documentation/api
+ - Utilização da [API do TMDB](https://www.themoviedb.org/documentation/api)
  - Apresentar indicadores de carregamento durante a execução de todas as requisições ou operações assíncronas que demandem um tempo perceptível ao usuário
  - Indicar para o usuário quando não há resultados na busca / filmes favoritados
  - Indicar para o usuário quando ocorrer algum erro nas requisições
- - Relizar requisições assíncronamente
+ - Realizar requisições assíncronamente
  - Persistência local dos filmes favoritados
- - Utilização de um gerenciador de dependências (ex: Cocoapods, Carthage)
- - Utilizar auto-layout quando aplicável
- - Layout com foco nos iPhones (todos os tamanhos incluindo o iPhone X)
+ - Utilização de um gerenciador de dependências (ex: Cocoapods, Carthage, Swift Package Manager)
+ - Construir as views programaticamente usando Auto Layout (sem storyboards ou .xib's)
+ - Layout com foco nos iPhones (todos os tamanhos do iPhone SE ao iPhone 12 Pro Max)
  - Orientação portrait
  - Orientação landscape durante a exibição do trailer
  - Pelo menos um teste automatizado de interface
@@ -45,12 +45,11 @@ Requisitos do Produto
 
  - Uso de animações para apresentação do conteúdo
  - Customização da UI do AVPlayer para exibição dos trailers
- - Utilização de recursos do iOS 11 (caso o usuário esteja no iOS 11)
+ - Utilização de recursos do iOS 14 (caso o usuário esteja no iOS 14)
  - Busca automática (buscar na API conforme o usuário digita)
  - Layout diferenciado para iPad caso aplicável
- - Suporte a landscape nos iPhones e / ou iPads
+ - Suporte a landscape no app todo nos iPhones e/ou iPads
  - Testes unitários
- - Integração contínua (Travis)
 
 ----------
 
